@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tech Blog</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+  <div>
+    <header>
+      <nav class="navbar">
+        <a class="nav-link" href="/">Home</a>
+        <a class="nav-link" href="/dashboard">Dashboard</a>
+        <a class="nav-link" href="/login">Login</a>
+        <a class="nav-link" href="/" class="" id="logout">Logout</a>
+      </nav>
+      <button type="button" class="btn btn-lg">Tech Blog</button>
+    </header>
+    <main class="container container-fluid container-sm">
+      {{{body}}}
+    </main>
+  </div>
+  <!-- Render script for logged in users only -->
+  {{#if logged_in}}
+  <script src="/js/logout.js"></script>
+  {{/if}}
+</body>
+
+</html>

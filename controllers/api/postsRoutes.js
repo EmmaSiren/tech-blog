@@ -16,6 +16,7 @@ router.post('/', withAuth, async (req,res) => {
   }
 });
 
+// Deletes a post based on it's id
 router.delete('/:id', withAuth, async (req,res) => {
   try {
     const postData = await Post.destroy({

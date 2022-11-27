@@ -1,0 +1,44 @@
+body {
+  background-color: rgb(200, 223, 212);
+}
+
+header {
+  background-color: rgb(53, 33, 33);
+  padding: 20px;
+}
+
+.btn-lg {
+  background-color: rgb(200, 223, 212);
+  box-shadow: 5px 6px 1px 1px darkgray;
+  color: rgb(53, 33, 33);
+  font-weight: bold;
+}
+
+a {
+  color: rgb(200, 223, 212);
+}
+
+.card {
+  margin: 10px;
+  border-width: 2px;
+  border-color: rgb(53, 33, 33);
+  border-radius: 0px;
+}
+
+.card-header {
+  display: flex; 
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  background-color: rgb(53, 33, 33);
+  color:rgb(200, 223, 212);
+}
+
+.card-header:first-child {
+  border-radius: 0px;
+}
+
+.card-body {
+  background-color: rgb(200, 223, 212);
+  color: rgb(53, 33, 33);
+}
