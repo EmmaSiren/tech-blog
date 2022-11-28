@@ -42,3 +42,11 @@ a {
   background-color: rgb(200, 223, 212);
   color: rgb(53, 33, 33);
 }
+
+.btn-secondary {
+  width: 100%;
+}
+
+.signUp {
+  color:blue;
+}
