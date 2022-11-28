@@ -5,12 +5,12 @@ const { User } = require('../../models');
 router.post('/', async (req,res) => {
   try {
     const userData = await User.create({
-      username: req.body.username,
+      name: req.body.name,
       password: req.body.password,
     });
     req.session.save(() => {
       req.session.user_id = userData.id;
-      req.session.user_name = userData.username;
+      req.session.user_name = userData.name;
       req.session.logged_in = true;
 
       res.status(200).json(userData);
@@ -26,34 +26,34 @@ router.post('/login', async (req,res) => {
   try {
     const userData = await User.findOne({ 
       where: {
-        email: req.body.email,
+        username: req.body.name,
       },
     });
 
     if (!userData){
       res
         .status(400)
-        .json({message: 'Incorrect email or password, please try again.'});
+        .json({message: 'Incorrect username or password, please try again.'});
         return;
     }
 
-    const validPassword = await userData.checkPassword(req.body.password);
+    const validPassword =  userData.checkPassword(req.body.password);
 
     if (!validPassword) {
       res
         .status(400)
-        .json({message: 'Incorrect email or password, please try again.'});
+        .json({message: 'Incorrect username or password, please try again.'});
     }
 
     req.session.save(() => {
       req.session.user_id = userData.id;
-      req.session.user_name = userData.username;
+      req.session.user_name = userData.name;
       req.session.logged_in = true;
 
-      res.json({user: userData, message: 'Successfully logged in!'});
+      res.json({userData, message: 'Successfully logged in!'});
     });
   } catch(err) {
-    res.status(400).json(err);
+    res.status(400).json({message: 'No account under this username!'});
   }
 });
 
