@@ -1,0 +1,20 @@
+<div class="card row">
+  <div class="card-header">
+    <p>Create New Post</p>
+  </div>
+  <form class="card-body post-form">
+    <div class="mb-3">
+      <label for="postTitle" class="form-label">Title</label>
+      <input type="text" class="form-control" id="postTitle">
+    </div>
+    <div class="mb-3">
+      <label for="postContent" class="form-label">Content</label>
+      <input type="text" class="form-control" id="postContent">
+    </div>  
+    <button class="btn btnCreate" data-id="{{post.id}}">
+      <a href="/addPosts">+ New Post</a>
+    </button>  
+  </form>
+</div>
+
+<script src="./js/newPost.js"></script>

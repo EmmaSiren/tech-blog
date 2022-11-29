@@ -8,7 +8,7 @@
 ![Express](https://img.shields.io/badge/Express.js-000000?style=for-the-badge&logo=express&logoColor=white)
 ![Heroku](https://img.shields.io/badge/Heroku-430098?style=for-the-badge&logo=heroku&logoColor=white)
 
-## **Description**
+<!-- ## **Description** -->
 
 ## **Installation & Usage**
 Please visit https://damp-waters-97002.herokuapp.com/ to view the deployed application on Heroku. Below you will find a screenshot of the application.

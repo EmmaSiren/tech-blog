@@ -50,3 +50,7 @@ a {
 .signUp {
   color:blue;
 }
+
+.btnCreate {
+  background-color: rgb(53, 33, 33);
+}
