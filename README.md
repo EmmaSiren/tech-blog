@@ -11,4 +11,4 @@
 <!-- ## **Description** -->
 
 ## **Installation & Usage**
-Please visit https://damp-waters-97002.herokuapp.com/ to view the deployed application on Heroku. Below you will find a screenshot of the application.
+Please visit https://limitless-oasis-32835.herokuapp.com/ to view the deployed application on Heroku. Below you will find a screenshot of the application.
